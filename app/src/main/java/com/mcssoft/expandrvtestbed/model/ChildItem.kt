@@ -5,11 +5,18 @@ import android.os.Parcelable
 
 class ChildItem() : Parcelable {
 
-    val childTitle = ""
+    var childTitle = ""
 
     constructor(parcel: Parcel) : this() {
     }
 
+    constructor(title: String) : this() {
+        childTitle = title
+    }
+
+    fun getTitle() : String {
+        return childTitle
+    }
     override fun writeToParcel(dest: Parcel?, flags: Int) {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }

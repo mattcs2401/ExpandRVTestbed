@@ -10,7 +10,7 @@ import kotlinx.android.synthetic.main.layout_child.view.*
 
 class ChildsViewHolder : ChildViewHolder {
 
-    private lateinit var childTitle: TextView
+    private var childTitle: TextView
 
     constructor(itemView: View) : super(itemView) {
         childTitle = itemView.findViewById(R.id.id_tv_child)
